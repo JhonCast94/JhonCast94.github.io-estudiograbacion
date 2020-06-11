@@ -1,0 +1,58 @@
+html{
+	font-size: 16px;
+}
+
+@font-face{
+	font-family: 'Aural';
+	src: url(../fuentes/Arual_0.ttf);
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100vh;
+	background: linear-gradient(#F2F2F2,#BFBFBF);
+}
+
+/*------------Header------------------*/
+
+header{
+	font-size: 35px;
+	display: flex;
+	height: 15%;
+	background: #026873;
+}
+
+header .logo{
+	display: flex;
+	height: 11rem;
+	width: 36rem;
+	background: url(../img/logo4.png);
+	background-size: contain;
+	background-repeat: no-repeat;: 
+}
+
+#menu{
+	font-family: 'Aural';
+	font-size: 1.2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	position: relative;
+	left: 12%;
+	margin: 1.25em;
+}
+
+#menu a{
+	color: white;
+	text-decoration: none;
+	text-shadow: 0.625rem 1.25rem 1.875rem gray;
+}
+
+#menu a:hover{
+	color:#BFBFBF;
+	text-shadow: 0.625rem 1.25rem 1.875rem;
+}

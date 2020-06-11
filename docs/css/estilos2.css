@@ -1,0 +1,142 @@
+
+/*-------------Video----------------*/
+.video{
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	font-size: 0.625rem;
+	margin-top: 4em;
+	position: relative;
+}
+
+.video iframe{
+	border-radius: 3%;
+}
+
+.video p{
+	font-family:'Playfair Display', serif;
+	font-size: 2.5em;
+	position: absolute;
+	/*right: 75%;*/
+	top: 100%;
+	color: #026873;
+	text-shadow: 10px 20px 30px black;
+}
+/*------------Social Bar-------------*/
+.social-bar{
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.6em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 2;
+}
+.icon{
+	color: white;
+	text-decoration: none;
+	padding: .7em;
+	display: flex;
+	transition: all .35s;
+}
+
+.icon:hover{
+	padding-right: 3em;
+	border-radius: 1em 0 0 1em;
+	box-shadow: 0 0 .5em rgba(0,0,0,.42);
+}
+
+.fa-facebook{
+	background: #2E406E;
+	border-radius: 1rem 0 0 0;
+}
+
+.fa-youtube{
+	background: #E83028;
+	font-size: .95em;
+	
+}
+
+.fa-soundcloud{
+	background: #FD7E14;
+	font-size: .90em;
+}
+
+.fa-instagram{
+	background: #6C35BF;
+	font-size: 1.05em;
+	border-radius:  0 0 0 1rem;
+}
+
+/*--------Imagenes-----------*/
+.galeria{
+	display: flex;
+	flex-wrap: nowrap;
+	margin: auto;
+	width: 80%;
+	margin-top:6em;
+	/*gap: 1em;*/
+	justify-content: center;
+	background-size: cover;
+}
+
+.galeria img{
+
+	width: 97%;
+	border-radius: 7%;
+	object-fit: cover;
+	transition: transform .5s;
+}
+
+.galeria a:hover img{
+	transform: scale(1.13); ;
+}
+
+/*--------efecto Light Box------------*/
+
+.light-box{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	transition: transform .25s ease-in-out;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+}
+
+.light-box:target{
+	transform: scale(1);
+}
+
+.close{
+	display: block;
+	position: absolute;
+	top: 15%;
+	right: 27%;
+	background: #04C4D9;
+	color: #fff;
+	text-decoration: none;
+	width: 3.5em;
+	height: 3.5em;
+	text-align: center;
+	line-height: 3.5em;
+	border-radius: 50%;
+}
+
+.next{
+	display: block;
+	background: #04C4D9;
+	color: #fff;
+	height: 3.5em;
+	width: 3.5em;
+	line-height: 3.5em;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 50%;
+}
