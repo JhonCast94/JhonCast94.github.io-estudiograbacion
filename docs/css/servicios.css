@@ -1,0 +1,48 @@
+	/*--azul:#04C4D9;
+	--verde1: #026873;
+	--verde2: #37A6A6;
+	--blanco: #F2F2F2;
+	--gris: #BFBFBF;*/
+
+
+body h1{
+	font-family: 'Raleway', sans-serif;
+	color: #026873;
+	font-size: 2.6em;
+}
+
+body p{
+	font-family:'Playfair Display', serif;
+	font-size: 1.8em;
+	color: #026873;
+}
+
+.contenedor{
+	display: grid;
+	grid-auto-columns: 1fr 1fr;
+	grid-template-areas: "texto img" 
+
+} 
+
+.texto{
+	text-align: center;
+	margin-top: 7em;
+}
+#lista{
+	position: relative;
+}
+
+#lista li{
+	font-size: 2.5em;
+	list-style: none;
+	text-align: ce;
+	color:#026873;
+}
+
+.img{
+	background: url(../img/4.jpg);
+	background-size:60% 95%, cover;
+	background-repeat:no-repeat;
+	position: relative;
+	top:5em;
+}

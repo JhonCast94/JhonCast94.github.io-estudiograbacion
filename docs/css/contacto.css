@@ -1,0 +1,19 @@
+#mapa{
+	position: relative;
+	margin-top: 8.5em;
+	left: 15%;
+}
+
+p{
+	font-family:'Playfair Display', serif;
+	color: #026873;
+	font-size: 2.8em;
+	position: relative;
+	bottom: 40%;
+	left: 55%;
+}
+
+body{
+	overflow: hidden;
+	height: 100vh;
+}
