@@ -5,69 +5,25 @@
 	flex-direction: column;	
 	align-items: center;
 	font-size: 0.625rem;
-	margin-top: 4em;
+	margin-top: 4rem;
 	position: relative;
 }
 
 .video iframe{
 	border-radius: 3%;
+	height: 40vh;
+	width: 40vw;
 }
 
 .video p{
 	font-family:'Playfair Display', serif;
-	font-size: 2.5em;
+	font-size: 1.6vw;
 	position: absolute;
-	/*right: 75%;*/
 	top: 100%;
 	color: #026873;
 	text-shadow: 10px 20px 30px black;
 }
-/*------------Social Bar-------------*/
-.social-bar{
-	position: fixed;
-	right: 0;
-	top: 35%;
-	font-size: 1.6em;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	z-index: 2;
-}
-.icon{
-	color: white;
-	text-decoration: none;
-	padding: .7em;
-	display: flex;
-	transition: all .35s;
-}
 
-.icon:hover{
-	padding-right: 3em;
-	border-radius: 1em 0 0 1em;
-	box-shadow: 0 0 .5em rgba(0,0,0,.42);
-}
-
-.fa-facebook{
-	background: #2E406E;
-	border-radius: 1rem 0 0 0;
-}
-
-.fa-youtube{
-	background: #E83028;
-	font-size: .95em;
-	
-}
-
-.fa-soundcloud{
-	background: #FD7E14;
-	font-size: .90em;
-}
-
-.fa-instagram{
-	background: #6C35BF;
-	font-size: 1.05em;
-	border-radius:  0 0 0 1rem;
-}
 
 /*--------Imagenes-----------*/
 .galeria{
@@ -82,7 +38,6 @@
 }
 
 .galeria img{
-
 	width: 97%;
 	border-radius: 7%;
 	object-fit: cover;
@@ -139,4 +94,21 @@
 	text-decoration: none;
 	text-align: center;
 	border-radius: 50%;
+}
+
+@media screen and (max-width: 1176px) {
+
+.video iframe{
+	border-radius: 3%;
+	height: 40vh;
+	width: 60vw;
+}
+
+.galeria{
+	width: 90%;
+}
+
+.video p{
+	font-size: 2vw;
+}
 }
