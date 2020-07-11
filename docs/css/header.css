@@ -69,6 +69,10 @@ header #menu{
 
 @media screen and (max-width: 1176px) {
 	
+body{
+	height: 100vh;
+}
+
 header{
 	display:inline-block;
 	height: 23.5%;

@@ -5,44 +5,71 @@
 	--gris: #BFBFBF;*/
 
 
+
 body h1{
 	font-family: 'Raleway', sans-serif;
 	color: #026873;
-	font-size: 2.6em;
-}
-
-body p{
-	font-family:'Playfair Display', serif;
-	font-size: 1.8em;
-	color: #026873;
+	font-size: 2.6rem;
 }
 
 .contenedor{
-	display: grid;
-	grid-auto-columns: 1fr 1fr;
-	grid-template-areas: "texto img" 
-
+	display: flex;
+	justify-content: center;
+	width: 99vw;
+	position: relative;
+	height: 78vh;
 } 
 
 .texto{
+	position: relative;
+	right: 9rem;
 	text-align: center;
-	margin-top: 7em;
+	margin: 0;
+	height: 80%;
+	top: 15%;
 }
 #lista{
 	position: relative;
 }
 
 #lista li{
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	list-style: none;
-	text-align: ce;
 	color:#026873;
 }
 
-.img{
-	background: url(../img/4.jpg);
-	background-size:60% 95%, cover;
-	background-repeat:no-repeat;
+
+img{
 	position: relative;
-	top:5em;
+	top:5rem;
+	padding: 0;
+	margin-left: 1rem;
+	width: 28vw;
+	height: 70vh;
+}
+
+@media screen and (max-width: 1176px) {
+	.contenedor{
+		height: 70vh;
+		width: 97vw;
+		margin-left: 1.5rem;
+	}
+
+	.texto{
+		right: 5rem;
+	}
+
+	#lista li{
+		font-size: 1.9rem;
+	}
+
+	body h1{
+		font-size: 2.2rem;
+	}
+
+	img{
+		width: 35vw;
+		height: 60vh;
+	}
+
 }

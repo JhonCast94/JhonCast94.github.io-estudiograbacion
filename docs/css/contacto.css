@@ -1,19 +1,28 @@
 #mapa{
+	width: 37vw;
+	height: 55vh;
 	position: relative;
 	margin-top: 8.5em;
-	left: 15%;
+	left: 13%;
 }
 
 p{
 	font-family:'Playfair Display', serif;
 	color: #026873;
-	font-size: 2.8em;
+	font-size: 1.9rem;
 	position: relative;
 	bottom: 40%;
 	left: 55%;
+	width: 75vh;
 }
 
 body{
 	overflow: hidden;
 	height: 100vh;
+}
+
+@media screen and (max-width: 1176px){
+	p{
+		font-size: 1.5rem;
+	}
 }
